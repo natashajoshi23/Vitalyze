@@ -8,4 +8,4 @@ export function ThemeProvider({ children }) {
   }, [dark]);
   return <Ctx.Provider value={{ dark, toggle: () => setDark(d => !d) }}>{children}</Ctx.Provider>;
 }
-export const useTheme = () => useContext(Ctx);
+export const useTheme = () => useContext(Ctx); 
